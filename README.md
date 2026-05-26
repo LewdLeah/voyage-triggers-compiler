@@ -51,7 +51,5 @@ Any `script` field inside `meta` is ignored. (Duh!)
 ## Flags
 
 - `--compact` strips indentation from the outer `triggers.json`
-
 - `--no-mangle` keeps original variable names in the `script` string
-
 - `--no-minify` keeps aesthetic newlines/indentation in the `script` string
