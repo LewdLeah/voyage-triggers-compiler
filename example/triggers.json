@@ -1,0 +1,43 @@
+{
+  "Temple Heal": {
+    "name": "Temple Heal",
+    "conditions": [
+      {
+        "type": "party-location",
+        "operator": "equals",
+        "value": "Temple of Light"
+      }
+    ],
+    "script": "const a=check({type:'player-resource',resource:'health'});if(Object.values(a).every((b)=>10<=b)){skip=true;}else{log('healing party from',JSON.stringify(a));effects.push({type:'player-resource',resource:'health',operator:'add',value:5});}",
+    "effects": [
+      {
+        "type": "story",
+        "instruction": "The temple light heals the wounded."
+      }
+    ],
+    "recurring": true
+  },
+  "script-absent-example": {
+    "name": "script-absent-example",
+    "conditions": [
+      {
+        "type": "party-location",
+        "operator": "equals",
+        "value": "Temple of Light"
+      }
+    ],
+    "effects": [
+      {
+        "type": "story",
+        "instruction": "The temple bell tolls in welcome."
+      }
+    ]
+  },
+  "script-only-example": {
+    "name": "script-only-example",
+    "conditions": [],
+    "script": "log('this log will never run because the trigger has no conditions');",
+    "effects": [],
+    "recurring": true
+  }
+}
