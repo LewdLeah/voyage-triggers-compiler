@@ -1,4 +1,4 @@
-Compiles a folder of `.js`/`.mjs` trigger files into the single [`triggers.json`](example/triggers.json) blob a Voyage world config expects.
+Compiles any folder of `.js`/`.mjs` trigger files into the single [`triggers.json`](example/triggers.json) blob a Voyage world config expects.
 
 ## Quick start
 
