@@ -2,7 +2,7 @@ Compiles any folder of `.js`/`.mjs` trigger files into the single [`triggers.jso
 
 ## Quick start
 
-```
+```bash
 node voyage-triggers-compiler.mjs path/to/your/folder/
 ```
 
